@@ -1,0 +1,25 @@
+<div class="flex gap-2">
+
+  @for( region of regions; track region ) {
+  <button
+    class="btn"
+    (click)="regionSearch.set( region )"
+    [ngClass]="{
+        'btn-neutral':  region !== regionSearch(),
+        'btn-success': region === regionSearch()
+      }">
+    {{ region }}
+  </button>
+
+  }
+
+
+</div>
+
+
+<country-list
+  [countries]="regionResource.value() ?? []"
+  [errorMessage]="regionResource.error()"
+  [isLoading]="regionResource.isLoading()"
+  [isEmpty]="regionResource.value()?.length === 0"
+/>
