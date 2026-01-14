@@ -1,59 +1,93 @@
-# CountryApp
+# 🌍 Country App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+Aplicación web para explorar información detallada de países utilizando la API de REST Countries. Proyecto desarrollado con Angular 19 como parte de mi aprendizaje en desarrollo frontend.
 
-## Development server
+![App Screenshot](./screenshots/home.png)
 
-To start a local development server, run:
+## 🚀 Demo
 
+🔗 **[Ver demo en vivo](https://dgs-country-app.netlify.app/)**
+
+## ✨ Características
+
+- 🔍 **Búsqueda múltiple**: Encuentra países por nombre, capital o región
+- 🗺️ **Información detallada**: Visualiza datos completos de cada país
+- 💾 **Persistencia de búsquedas**: El historial se mantiene al navegar
+- 🎨 **Interfaz intuitiva**: Navegación fluida y moderna
+
+## 🛠️ Tecnologías
+
+- Angular 19
+- TypeScript
+- REST Countries API
+- RxJS
+- CSS3 / Tailwind
+- Netlify (deployment)
+
+## 📦 Instalación
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/country-app.git
+```
+
+2. Instala las dependencias:
+```bash
+cd country-app
+npm install
+```
+
+3. Inicia el servidor de desarrollo:
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. Abre tu navegador en `http://localhost:4200/`
 
-## Code scaffolding
+## 🎯 Funcionalidades
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Búsqueda por Capital
+Encuentra países introduciendo el nombre de su capital.
 
-```bash
-ng generate component component-name
-```
+### Búsqueda por Nombre
+Busca países directamente por su nombre oficial o común.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Búsqueda por Región
+Filtra países por regiones continentales (América, Europa, Asia, África, Oceanía).
 
-```bash
-ng generate --help
-```
+### Vista Detallada
+Al seleccionar un país, visualiza:
+- Nombre
+- Region
+- Bandera oficial
+- Población
+- Capital(es)
 
-## Building
+## 📸 Screenshots
 
-To build the project run:
+### Búsqueda por capital
+![Search by name](./screenshots/search-capital.png)
 
-```bash
-ng build
-```
+### Búsqueda por región
+![Search by region](./screenshots/search-region.png)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Detalle del país
+![Country detail](./screenshots/country-detail.png)
 
-## Running unit tests
+## 🔑 API
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Este proyecto utiliza la API pública de [REST Countries](https://restcountries.com/):
+- Endpoint: `https://restcountries.com/v3.1/`
+- No requiere API key
+- Completamente gratuita
 
-```bash
-ng test
-```
+## 🎓 Aprendizajes
 
-## Running end-to-end tests
+Este proyecto fue desarrollado como parte del curso de Angular de Udemy, donde practiqué:
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Consumo de APIs REST con HttpClient
+- Manejo de Observables y RxJS
+- Routing y navegación entre componentes
+- Servicios e inyección de dependencias
+- LocalStorage para persistencia de datos
+- Buenas prácticas de desarrollo en Angular
